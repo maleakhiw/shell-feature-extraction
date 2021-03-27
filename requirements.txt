@@ -1,0 +1,16 @@
+opencv-contrib-python==4.5.1.48
+opencv-python==4.2.0.34
+pandas==0.24.0
+plotly==4.12.0
+plotly-express==0.4.1
+scikit-image==0.16.2
+scikit-learn==0.23.2
+scipy==1.1.0
+seaborn==0.10.0
+tensorboard==2.4.0
+tensorboard-plugin-wit==1.7.0
+tensorflow==2.3.1
+tensorflow-estimator==2.3.0
+tensorpack==0.9.5
+tqdm==4.42.1
+numpy

@@ -1,11 +1,7 @@
-# Comparing Standard, Keypoint and Deep Learning Features for Shell Recognition
+![Shell image](data/shell.png)
+# Deep Learning vs Keypoint: Which Feature Set Is Better for Shell Recognition?
 
-This project aims to compare the discriminative capabilities of standard features using domain knowledge, keypoint features obtained using traditional computer vision techniques, and feature representations derived from pre-trained deep learning models. We trained support vector machine (SVM), random forest (RF), and feed-forward neural network (FFNN) and evaluate it using nested cross-validation using the aforementioned feature sets for evaluation.
-
-**Note**:
-- The shell dataset is provided by [Zhang et al. (2019)](https://www.nature.com/articles/s41597-019-0230-3).
-- I gratefully acknowledge Aylini Town for inspiring me to work on shell recognition task; I would also gratefully thank Dr. Chris Town for continuous help and support.
-
+Shells are ubiquitous objects that are both useful to humans and essential for preserving the marine ecosystem. With tens of thousands of species, shells are not easy to identify manually, necessitating automated approaches. Machine learning (ML) and computer vision are two technologies that can be employed to solve the issue. Unfortunately, very few studies have proposed the recognition of shells using these technologies. This paper presents an end-to-end shell species detection pipeline comprising feature extraction and recognition components. We exhaustively investigate various feature extraction methods, including those that use domain knowledge, keypoints, and pretrained deep neural networks. Three classifiers are used to validate the discriminative capabilities of all generated features: support vector machine (SVM), random forest (RF), and feed-forward neural network (FFNN). Using the recently proposed shell dataset, we show that our best model -- SVM trained on pretrained VGG16 features achieved 96% accuracy and macro-average F1, outperforming state-of-the-art models by more than 13% in both metrics.
 
 ## Requirements:
 - Python 3.6+
@@ -13,9 +9,10 @@ This project aims to compare the discriminative capabilities of standard feature
 - scipy
 - pandas
 - matplotlib
+- seaborn
 - TensorFlow 2.0
 - Scikit-learn 0.22
-- opencv-python 4.5.1.48
+- opencv-python 
 
 ### scripts and notebooks
 - jupyter
@@ -23,7 +20,7 @@ This project aims to compare the discriminative capabilities of standard feature
 
 ## Folder Structure:
 - *data*: contains the shell dataset
-- *notebooks*: contains utilities and experiment codes.
+- *notebooks*: contains utilities and experimentation codes.
 - *results*: contains experiments results (in csv and pickle), including
  the extracted features.
 
@@ -37,3 +34,7 @@ pip install .
 
  ## Author:
 - Maleakhi Wijaya: maw219@cam.ac.uk
+
+## Acknowledgements:
+- The shell dataset is provided by [Zhang et al. (2019)](https://www.nature.com/articles/s41597-019-0230-3).
+- I gratefully acknowledge Aylini Town for inspiring me to work on shell recognition task; I would also gratefully thank Dr. Chris Town for continuous help and support.
